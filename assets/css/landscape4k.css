@@ -1,0 +1,224 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    display: grid;
+    grid: 
+    "header" 4.5fr
+    "main" 20fr
+    "footer" 1fr / 75vw;
+    justify-content: center;
+}
+
+picture {
+    width: 100%;
+}
+
+
+header {
+    grid-area: header;
+    background-color: #404eed;
+    background-image: url(../images/header/crewleftbackground.svg), url(../images/header/crewrightbackground.svg), url(../images/header/cloudbackground.svg); 
+    background-repeat: no-repeat;
+    background-size: 20vw, 21vw, cover;
+    background-position: left bottom, right bottom, center;
+    display: grid;
+    grid: 
+    "h1 h1" min-content
+    "p p" min-content  
+    "buttonw buttonb" min-content / 4.5fr 5fr;
+}
+
+header h1 {
+    margin-top: 30px;
+    grid-area: h1;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 56px;
+    text-align: center;
+    justify-self: center;
+}
+
+header p {
+    grid-area: p;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.79px;
+    color: white;
+    margin: 24px 25vw 24px 25vw;
+    justify-self: center;
+    text-align: center;
+}
+
+header button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    padding: 11px 20px 11px 20px;
+    border-radius: 28px;
+    border: 0;
+    min-height: 44px;
+}
+
+header #bwhite {
+    color: #23272a;
+    grid-area: buttonw;
+    justify-self: end;
+    margin-left: 26vw;
+    margin-right: 16px;
+}
+
+header #bblack {
+    color: #ffffff;
+    grid-area: buttonb;
+    justify-self: start;
+    background-color: #23272a;
+    margin-right: 25vw;
+}
+
+main {
+    background-color: red;
+    grid-area: main;
+    display: grid;
+    grid: 
+    "1" fit-content
+    "2" fit-content
+    "3" fit-content
+    "4" fit-content / 100vw;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+main section {
+    padding: 40px 320px 40px 320px;
+}
+
+main section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.47px;
+    color: #23272a;
+    
+}
+
+main section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #23272a;
+}
+
+main #sec1 {
+    background-color: #ffffff;
+    grid-area: 1;
+    display: grid;
+    grid: 
+    "tela titulo" 6fr
+    "tela texto" 4fr / 6fr 5fr;
+}
+
+main #sec1 picture {
+    grid-area: tela;
+    justify-content: end;
+}
+
+main #sec1 h2 {
+    grid-area: titulo;
+    width: 350px;
+    align-self: end;
+}
+
+main #sec1 p {
+    grid-area: texto;
+    margin-top: 10px;
+}
+
+main #sec2 {
+    grid-area: 2;
+    display: grid;
+    grid: 
+    "titulo tela" 4fr
+    "texto tela" 4fr / 6fr 5fr;
+    background-color: #f6f6f6;
+    width: 78.5%;
+}
+
+main #sec2 picture {
+    grid-area: tela;
+    justify-content: end;
+}
+
+main #sec2 h2 {
+    grid-area: titulo;
+    width: 350px;
+    align-self: end;
+}
+
+main #sec2 p {
+    grid-area: texto;
+    margin-top: 10px;
+}
+
+main #sec3 {
+    background-color: #ffffff;
+    grid-area: 3;
+    display: grid;
+    grid: 
+    "tela titulo" 4fr
+    "tela texto" 4fr / 6fr 5fr;
+}
+
+main #sec3 picture {
+    grid-area: tela;
+    justify-content: end;
+}
+
+main #sec3 h2 {
+    grid-area: titulo;
+    width: 350px;
+    align-self: end;
+}
+
+main #sec3 p {
+    grid-area: texto;
+    margin-top: 10px;
+}
+
+main #sec4 h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #23272a;
+    margin-bottom: 15px;
+}
+
+main #sec4 {
+    grid-area: 4;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: start;
+    background-color: #f6f6f6;
+    align-items: center;
+    text-align: center;
+    width: 78.5%;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #23272a;
+    background-image: url(../images/footer/svgexport-15\ 1hi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

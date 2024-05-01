@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade com CSS</title>
+    <link rel="stylesheet" href="assets/css/mobile.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="assets/css/landscapefhd.css" media="(min-width: 601px) and (max-width: 1920px)">
+    <link rel="stylesheet" href="assets/css/landscape4k.css" media="(min-width: 1921px)">
+
+</head>
+<body>
+    <header>
+        <h1>imagine um<br>lugar...</h1>
+        <p>…onde você possa pertencer a um clube escolar, um grupo de gamers, ou uma comunidade artística mundial. Onde você e alguns amigos possam passar um tempo juntos. Um lugar que torna fácil conversar todos os dias e socializar com mais frequência.</p>
+        <button id="bwhite">Baixar para Mac</button>
+        <button id="bblack">Abra o Discord no seu navegador</button>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <picture>
+                <source srcset="assets/images/main/1.png" media="(min-width: 601px)"/>
+                <img src="assets/images/main/1m.png" alt="Grupos" />
+            </picture>
+            <h2>Crie um espaço controlado por convite onde você se sinta em casa</h2>
+            <p>Os servidores Discord são organizados em canais com assuntos para vocês colaborarem, compartilharem ou simplesmente falarem do dia sem entupir um chat geral.</p>
+        </section>
+        <section id="sec2">
+            <picture>
+                <source srcset="assets/images/main/2.png" media="(min-width: 601px)" />
+                <img src="assets/images/main/2m.png" alt="Voz" />
+            </picture>
+            <h2>Aqui é fácil se encontrar</h2>
+            <p>Entre no canal de voz quando estiver à toa. Amigos no mesmo servidor podem te ver e entrar imediatamente, sem nem ter que fazer a chamada.</p>
+        </section>
+        <section id="sec3">
+            <picture>
+                <source srcset="assets/images/main/3.png" media="(min-width: 601px)" />
+                <img src="assets/images/main/3m.png" alt="Organizados" />
+            </picture>
+            <h2>Para poucos e para muitos</h2>
+            <p>Organize qualquer comunidade com ferramentas de moderação e acesso personalizado a membros. Dê poderes especiais aos membros, monte canais privados e muito mais.</p>
+        </section>
+        <section id="sec4">
+            <h2>TECNOLOGIA DE CONEXÃO CONFIÁVEL</h2>
+            <p>Voz e vídeo de baixa latência, para você conversar como se estivesse na mesma sala. Dê um joinha por vídeo, veja amigos transmitirem a jogatina do dia ou junte uma galera pra desenhar na tela compartilhada.</p>
+            <picture>
+                <source srcset="assets/images/main/4.png" media="(min-width: 601px)" />
+                <img src="assets/images/main/4m.png" alt="Tecnologia Confiável" />
+            </picture>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>

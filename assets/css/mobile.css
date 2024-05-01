@@ -1,0 +1,125 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    display: grid;
+    grid: 
+    "header" 5fr
+    "main" 20fr
+    "footer" 1fr / 100%;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    grid-area: header;
+    display: flex;
+    flex-flow: column;
+    background-image: url(../images/header/mheaderbackground.svg);
+    background-color: #404eed;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: left bottom;
+    background-clip:padding-box ;
+    padding: 69px 24px 42vw 24px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left ;
+    width: min-content;
+    white-space: pre;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 21.79px;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    letter-spacing: normal;
+    margin: 24px 0 24px 0;
+}
+
+header button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #23272a;
+    border-radius: 28px;
+    background-color: #ffffff;
+    border: 0;
+    text-align: center;
+    padding: 16px 0 16px 0;
+    margin-bottom: 16px;
+}
+
+header #bblack {
+    background-color: #23272a;
+    color: white;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid: 
+    "1" 1fr
+    "2" 1fr
+    "3" 1fr
+    "4" 1fr / 100%;
+}
+
+main section {
+    padding: 40px 24px 40px 24px;
+    display: flex;
+    flex-flow: column;
+    gap: 27px;
+}
+
+main section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.68px;
+    text-align: center;
+}
+
+main section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.79px;
+    text-align: center;
+}
+
+main #sec2, #sec4 {
+    background-color: #f6f6f6;
+}
+
+main #sec4 h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #23272a;
+    background-image: url(../images/footer/svgexport-15\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
